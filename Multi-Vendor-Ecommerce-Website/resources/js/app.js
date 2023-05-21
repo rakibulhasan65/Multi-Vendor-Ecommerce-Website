@@ -3,6 +3,8 @@ import { createApp } from "vue";
 
 const app = createApp({});
 import example from "./components/ExampleComponent.vue";
+import VueAdvance from "./components/VueAdvance.vue";
 app.component("example", example);
+app.component("VueAdvance", VueAdvance);
 
 app.mount("#app");
