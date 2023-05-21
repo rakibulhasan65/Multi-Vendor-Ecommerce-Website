@@ -15,12 +15,16 @@
             />
         </div>
     </div>
+    <modal/>
 </template>
 
 <script>
-import { onMounted } from 'vue';
+import modal from "./ModalVue.vue"
 
 export default {
+    components: {
+        modal
+    },
     data() {
         return {
             title: "Welcome!"
