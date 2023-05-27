@@ -17,7 +17,8 @@
             </li>
         </ul>
     </div>
-    <VueAdvance />
+    <VueAdvance ></VueAdvance>
+    <ApiTesting></ApiTesting>
 </template>
 <script>
 export default {

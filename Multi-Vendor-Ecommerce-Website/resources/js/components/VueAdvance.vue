@@ -15,7 +15,7 @@
             />
         </div>
     </div>
-    <modal/>
+    <modal :products="products"></modal>
 </template>
 
 <script>
@@ -27,7 +27,12 @@ export default {
     },
     data() {
         return {
-            title: "Welcome!"
+            products: [
+                {product_id:1,product_name:"iphone",product_price:"$100",product_stock:false},
+                {product_id:2,product_name:"laptop",product_price:"$200",product_stock:true},
+                {product_id:3,product_name:"desktop",product_price:"$300",product_stock:false},
+                {product_id:4,product_name:"one plus",product_price:"$90",product_stock:true},
+            ]
         };
     },
     methods: {

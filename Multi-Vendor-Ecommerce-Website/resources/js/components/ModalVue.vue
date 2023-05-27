@@ -1,15 +1,25 @@
 <template>
     <div class="modalShow">
         <div class="modalBody">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Magnam, saepe.
-            </p>
+            <table v-for="product in products" :key="product.product_id" class="table border">
+                <tr>
+                    <td>{{ product.product_id }}</td>
+                    <td>{{ product.product_name }}</td>
+                    <td>{{ product.product_price }}</td>
+                    <td v-if="product.product_stock == true"><span>Available</span></td>
+                    <td v-else><span>Stock Out</span></td>
+                </tr>
+            </table>
         </div>
     </div>
 </template>
 <script>
-export default {};
+export default {
+    props: ["products"],
+    data() {
+        return {};
+    },
+};
 </script>
 <style>
 .modalShow {
