@@ -17,11 +17,12 @@
             </li>
         </ul>
     </div>
-    <VueAdvance ></VueAdvance>
+    <VueAdvance></VueAdvance>
     <ApiTesting></ApiTesting>
 </template>
 <script>
 export default {
+    name: "ExampleComponent",
     data() {
         return {
             books: [
